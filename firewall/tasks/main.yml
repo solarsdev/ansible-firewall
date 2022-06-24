@@ -1,0 +1,7 @@
+---
+- ansible.builtin.iptables:
+    chain: INPUT
+    source: 1.2.3.4
+    jump: DROP
+    state: absent
+  become: true

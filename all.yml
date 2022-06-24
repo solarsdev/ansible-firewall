@@ -1,0 +1,5 @@
+---
+- name: Modify firewall rule
+  hosts: all
+  roles:
+    - firewall
