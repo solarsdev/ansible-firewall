@@ -1,0 +1,11 @@
+---
+- name: Modify firewall rule
+  hosts: all
+  tasks:
+    - name: Apply iptables
+      ansible.builtin.iptables:
+        chain: INPUT
+        source: 1.2.3.4
+        jump: DROP
+        #state: absent # absent is delete rule
+  become: true

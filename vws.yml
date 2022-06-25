@@ -1,5 +1,0 @@
----
-- name: Modify firewall rule
-  hosts: vws
-  roles:
-    - firewall
